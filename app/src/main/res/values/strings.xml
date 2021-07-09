@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">E-Skills</string>
+    <string name="txt_ask_for_accounts">ASK FOR ACCOUNTS</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome To E-Skills Platform</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="login">LOGIN</string>
+    <string name="or_connect_with">Or connect with</string>
+    <string name="ask_for_account">Ask for account ?</string>
+    <string name="log_in">Log In</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="hey_welcome_back">Hey, welcome back</string>
+    <string name="ask_for_account_button">Ask for account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="join_us_now">Join us now</string>
+    <string name="projects">Projects</string>
+    <string name="lectures">Lectures</string>
+    <string name="acheiv">Acheiv...</string>
+    <string name="quiz">Quiz</string>
+    <string name="your_courses">Your Courses</string>
+    <string name="tell_us_what_do_you_want_to_learn">Tell us, what do you want to learn ?</string>
+    <string name="tell_us_what_do_you_want_to_search_for">Tell us, what do you want to search for ?</string>
+    <string name="recemonded_for_you">Recemonded for you</string>
+    <string name="continuee">Continue</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="requirements">Requirements</string>
+    <string name="description">Description</string>
+    <string name="search">search</string>
+    <string name="welcome_back_mentornations">Welcome Back Mentornations !</string>
+    <string name="e_skills_is_the_passport_to_the_future_so_learn_more_and_more">E-Skills is the passport to the future, So learn more and more</string>
+    <string name="chapters">Chapters</string>
+    <string name="about">About</string>
+    <string name="discussions">Discussions</string>
+    <string name="quiz_for_chapters">Quiz for chapters :</string>
+    <string name="quiz_results">Quiz Results</string>
+    <string name="details">Details</string>
+    <string name="tell_us_what_project_do_you_seek">Tell us what project do you seek ?</string>
+    <string name="search_your_message">Search your messages</string>
+</resources>

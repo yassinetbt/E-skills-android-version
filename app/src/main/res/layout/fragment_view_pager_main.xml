@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainViewPagerFramelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragments.ViewPagerMainFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/MainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomnavmenu"
+        android:layout_below="@id/top_bar"
+        android:fitsSystemWindows="true" />
+
+</FrameLayout>

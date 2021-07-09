@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@android:color/transparent"
+    android:elevation="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/question_profile_image_cardview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:elevation="12dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/response_profile_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/response_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/question_profile_image_cardview"
+                    android:fontFamily="@font/jost_medium"
+                    android:letterSpacing="0.04"
+                    android:text="Zied Cherif"
+                    android:textColor="@color/textgraycolor"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/green_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/response_profile_name"
+                    android:background="@drawable/circular_shape" />
+
+                <TextView
+                    android:id="@+id/response_profile_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/green_circle"
+                    android:fontFamily="@font/jost_medium"
+                    android:letterSpacing="0.04"
+                    android:text="1h ago"
+                    android:textColor="@color/textgraycolor"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/question_accepted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/response_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/jost_medium"
+                android:letterSpacing="0.04"
+                android:text="when an algorithm is &quot;translated&quot; into a program and that program doesnt show anything. I mean it just…"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/votes_response_item"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_votes"></ImageView>
+
+                <TextView
+                    android:id="@+id/response_votes_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/votes_response_item"
+                    android:fontFamily="@font/jost_medium"
+                    android:letterSpacing="0.04"
+                    android:lineSpacingExtra="6sp"
+                    android:text="1215555 votes"
+                    android:textColor="@color/textgraycolor"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/views"
+                    android:layout_toEndOf="@id/response_votes_number" />
+
+
+                <ImageView
+                    android:id="@+id/views"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_toStartOf="@+id/response_views_number"
+                    android:src="@drawable/ic_views"></ImageView>
+
+                <TextView
+                    android:id="@+id/response_views_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/jost_medium"
+                    android:letterSpacing="0.04"
+                    android:lineSpacingExtra="6sp"
+                    android:text="20122222 views"
+                    android:textColor="@color/textgraycolor"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

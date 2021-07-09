@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragments.TitleQuestionFragment"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:weightSum="6"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/question_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/add_question_shape"
+            android:ems="10"
+            android:layout_weight="2"
+            android:fontFamily="@font/jost_medium"
+            android:hint="     Question Title"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#51000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/question_tags"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:background="@drawable/add_question_shape"
+            android:ems="10"
+            android:fontFamily="@font/jost_medium"
+            android:hint="    Tags"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#51000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/question_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/add_question_shape"
+            android:ems="10"
+            android:fontFamily="@font/jost_medium"
+            android:hint="     Content Text"
+            android:layout_weight="2"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#51000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

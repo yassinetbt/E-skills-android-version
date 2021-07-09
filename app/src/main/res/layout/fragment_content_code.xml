@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragments.ContentCodeFragment"
+    android:background="@color/backgroundcolor">
+
+    <EditText
+        android:id="@+id/question_content_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/add_question_shape"
+        android:ems="10"
+        android:fontFamily="@font/jost_medium"
+        android:hint="     Content Code"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#51000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:divider="@android:color/transparent"
+    android:elevation="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <ImageView
+            android:id="@+id/played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"></ImageView>
+
+        <TextView
+
+            android:id="@+id/chapters_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toStartOf="@id/tick"
+            android:layout_toEndOf="@id/played"
+            android:fontFamily="@font/jost_medium"
+            android:letterSpacing="0.04"
+            android:text="2 lectures - introduction"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chapters_title"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/played"
+            android:fontFamily="@font/jost_light"
+            android:letterSpacing="0.04"
+            android:text="total : 9 minutes"
+            android:textColor="@color/textgraycolor"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/tickline"
+            android:layout_width="1dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="9dp"
+
+            android:layerType="software"></TextView>
+
+        <ImageView
+            android:id="@+id/tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"></ImageView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

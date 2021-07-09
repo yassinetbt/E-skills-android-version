@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu"></item>
+
+    <item
+        android:id="@+id/courses"
+        android:icon="@drawable/ic_allcourses"
+        android:title="Courses"></item>
+
+    <item
+        android:id="@+id/eskills"
+        android:title=" "></item>
+
+    <item
+        android:id="@+id/stack"
+        android:icon="@drawable/ic_stackeskills"
+        android:title="Stack"></item>
+
+    <item
+        android:id="@+id/project"
+        android:icon="@drawable/ic_rocket_1"
+        android:title="Project"></item>
+
+
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor2"
+    android:paddingStart="15dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="15dp"
+    tools:context=".Views.Fragments.ChapterDetailsFragment">
+
+    <ScrollView
+        android:id="@+id/lecture_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/write_message_shape"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/lecture_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost_medium"
+                android:letterSpacing="0.04"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lecture_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lecture_title"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/jost_regular"
+                android:letterSpacing="0.04"
+                android:text="We live in a world where computers are only vaguely understood, even though they permeate every moment of our lives.
+But there is one area of computer science where anyone can understand the basics of what’s going on.
+That area of computer science is called algorithms.
+Algorithms are the basis of all software. Without algorithms, you wouldn’t have a phone or
+computer and you’d probably be reading this description on a piece of paper (actually, you wouldn’t be reading it at all).
+In this course , We learn by seeing others solve problems and by solving problems by ourselves. Being exposed to different problem-solving techniques and seeing how different algorithms are designed helps us to take on the next challenging problem that we are given.
+
+By considering a number of different algorithms, we can begin to develop pattern recognition so that the next time a similar problem arises, we are better able to solve it."
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>

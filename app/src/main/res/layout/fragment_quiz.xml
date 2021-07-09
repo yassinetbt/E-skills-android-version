@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor2"
+    tools:context=".Views.Fragments.QuizFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/quiz_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_top_home"
+                    android:backgroundTint="@color/dashboardpurple"
+                    android:orientation="vertical"
+                    android:paddingStart="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="25dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:text="@string/quiz_for_chapters"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/chapter_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:text="how to write an algorithm "
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_questions" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:divider="@android:color/transparent"
+                        android:elevation="8dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/write_message_shape"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/quiz_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:layout_toStartOf="@id/quiz_2"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 1"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:layout_toStartOf="@id/quiz_3"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 2"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 3"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@id/quiz_3"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 4"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@id/quiz_4"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 5"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/quiz_1"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_toStartOf="@id/quiz_7"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 6"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/quiz_1"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_toStartOf="@id/quiz_8"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 7"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/quiz_1"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_toEndOf="@id/quiz_2"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 8"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/quiz_1"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toEndOf="@id/quiz_3"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 9"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/quiz_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/quiz_1"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toEndOf="@id/quiz_4"
+                                android:background="@drawable/quiz_shape"
+                                android:fontFamily="@font/jost_semi_bold"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="6dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="10dp"
+                                android:text="Quiz 10"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/ovalquiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/ic_oval">
+
+                            <TextView
+                                android:id="@+id/question_topic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/jost_medium"
+                                android:letterSpacing="0.04"
+                                android:paddingStart="40dp"
+                                android:paddingEnd="40dp"
+                                android:text="Choose the correct HTML element for the largest heading"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="normal" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/question_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/jost_medium"
+                            android:text="2/10"
+                            android:textColor="@color/dashboardpurple"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/jost_bold"
+                            android:text="?"
+                            android:textColor="@color/dashboardpurple"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/choice_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/question_right"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:id="@+id/question_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="@font/jost_medium"
+                            android:letterSpacing="0.04"
+                            android:text="body style=background-color:yellow;"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/tickline1"
+                            android:layout_width="1dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="9dp"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/tick1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/choice_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/question_false"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:id="@+id/question_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="@font/jost_medium"
+                            android:letterSpacing="0.04"
+                            android:text="body style=background-color:yellow;"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/tickline2"
+                            android:layout_width="1dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="9dp"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/tick2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/choice_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/question_answer"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:id="@+id/question_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="@font/jost_medium"
+                            android:letterSpacing="0.04"
+                            android:text="body style=background-color:yellow;"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/tickline3"
+                            android:layout_width="1dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="9dp"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/tick3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/choice_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/question_select"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:id="@+id/question_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="@font/jost_medium"
+                            android:letterSpacing="0.04"
+                            android:text="body style=background-color:yellow;"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/tickline4"
+                            android:layout_width="1dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="9dp"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:id="@+id/tick4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

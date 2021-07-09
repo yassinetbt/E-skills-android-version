@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dashboardpurple"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/research"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/rectangle_shape"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:layout_toStartOf="@id/liveButton"
+            android:layout_marginEnd="15dp"
+            android:inputType="textPersonName"
+            android:shadowColor="#0c000000"
+            android:fontFamily="@font/jost_medium_italic"
+            android:drawableLeft="@drawable/logo_nav"
+            android:shadowDx="2"
+            android:shadowDy="0"
+            android:text="News Feed"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/messageButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/profileButton"
+            android:background="@drawable/rectangle_shape"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liveButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/rectangle_shape"
+            android:layout_toStartOf="@id/messageButton"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/live"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/rectangle_shape"
+            android:layout_toStartOf="@id/logout_button"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_profile"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/rectangle_shape"
+           android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="5dp">
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_exit" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/MainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomnavmenu"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="-4dp">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_menu"
+        app:itemIconTint="@drawable/tab_color"
+        app:menu="@menu/nav_menu">
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_nav" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

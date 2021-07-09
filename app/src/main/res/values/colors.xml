@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_dark">#141422</color>
+    <color name="textcolor">#d9000000</color>
+    <color name="dashboardpurple">#6300aa</color>
+    <color name="textdarkcolor">#1e1b1d</color>
+    <color name="redlive">#FC573B</color>
+    <color name="green">#00a344</color>
+    <color name="gray">#E0E2E6</color>
+    <color name="backgroundcolor">#f3f5f9</color>
+    <color name="textgraycolor">#a0a0a0</color>
+    <color name="buynowcolor">#74b3be</color>
+    <color name="backgroundcolor2">#f9f9f8</color>
+    <color name="quizcardcolor">#fec8a2</color>
+    <color name="expcardcolor">#c1cbff</color>
+    <color name="lecturescardcolor">#fdbeb4</color>
+    <color name="projectscardcolor">#d9bbfa</color>
+    <color name="passwordcolor">#0267c8</color>
+    <color name="connectwith">#979797</color>
+    <color name="facebook">#d9ffffff</color>
+    <color name="messagein">#33393c</color>
+    <color name="red_quiz">#aa0023</color>
+    <color name="green_quiz">#00aa38</color>
+
+</resources>
+
